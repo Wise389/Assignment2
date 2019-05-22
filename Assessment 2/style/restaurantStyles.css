@@ -1,0 +1,72 @@
+/*Your header and footer must match across the pages,
+so store their styles in an external file called
+restaurantStyles.css -->
+
+/*Style the site navigation so that:
+Visited links appear in a different color than their default state.
+When you hover over a link, the text is bold.
+  This should only be when hovering. Otherwise,
+  the text should be the normal thickness.
+Active links should not be underlined.
+*/
+header, footer {
+  background-color: #5b7d87;
+  color: #fef9ff;
+  height: 90px;
+  font-family: : Monospace;
+  text-align: center;
+  padding: 30px 10px 20px 10px;
+
+}
+nav {
+  padding: 0px 20px;
+  border-top: thin black solid;
+  border-bottom:thin black solid;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+nav .butn {
+  background: #5b7d87;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+nav .butn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+  font-weight: bold;
+}
+a:visited {
+  color: olive;
+}
+
+
+body{
+  margin: 0;
+
+}
+section {
+  margin: auto;
+  background-color: #99ffcc;
+  text-align: center;
+}
+@media(max-width: 768px) {
+    .container .row {
+        max-width: 90%;
+    }
+}

@@ -1,0 +1,115 @@
+<!-- Set the form labels for the required fields to be bold. -->
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  Name: Jon Wise
+  Date Created: 5/17/19
+  Most recent revision: 5/21/19
+-->
+  <head>
+    <style media="screen">
+      .row{
+        width: 600px;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        font-weight: bold;
+      }
+      .container .row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        padding-top: 10px;
+      }
+      .box {
+        align-content: center;
+        width: 47%;
+        font-weight: bold;
+      }
+      .box1 {
+        width: 97%;
+        font-weight: bold;
+      }
+      .box2 {
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+      }
+      .container{
+          padding-top: 20px;
+      }
+  </style>
+  <meta charset="utf-8">
+  <meta name="St. John's Wurst" content="width=device-width, initial-scale=1, shrink-to-fit=no" >
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="style/restaurantStyles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <header>
+    <center><h1><p class="b">St. John's Wurst</p></h1></center>
+  </header>
+
+    <nav>
+      <a class="butn" href="Home.html">Home</a>
+      <a class="butn" href="Menu.html">Menu</a>
+      <a class="butn" href="contact.html">Contact Us</a>
+    </nav>
+<body>
+<section>
+  <div class="container">
+  <div class="row">
+    <input type="text" name="name" placeholder="Enter your name" class="box" required>
+    <input type="text" name="number" placeholder="Enter your phone number" class="box" required>
+  </div>
+  <div class="row">
+    <input type="text" name="email" placeholder="Enter your email" class="box1" required>
+    </div>
+  <div class="row">
+      <label for="reason">Reason of Inquiry</label>
+      <select class="reasons" name="reasons">
+        <option value="Catering">Catering(default)</option>
+        <option value="Private">Private Party</option>
+        <option value="Feedback">Feedback</option>
+        <option value="other">Other</option>
+      </select>
+  </div>
+  <div class="row">
+        <fieldset>
+          <label class="box2" for="info">Addition Information</label>
+          <textarea class="box2" name="info"></textarea>
+        </fieldset>
+  </div>
+  <div class="row">
+      <fieldset>
+        <label for="questioneer">Have you been to the restaurant?</label>
+        <input type="radio" name="questioneer" value="Yes" id="choice1">
+        <label for="choice1">Yes</label>
+        <input type="radio" name="questioneer" value="No" id="choice2">
+        <label for="choice2">No</label>
+      </fieldset>
+    </div>
+    <div class="row">
+      <fieldset>
+        <label for="Respond">Best days to contact you:</label>
+        <input type="checkbox" name="days" value="M">
+        <label for="M">M</label>
+        <input type="checkbox" name="days" value="T">
+        <label for="T">T</label>
+        <input type="checkbox" name="days" value="W">
+        <label for="W">W</label>
+        <input type="checkbox" name="days" value="Th">
+        <label for="Th">Th</label>
+        <input type="checkbox" nam="days" value="F">
+        <label for="F">F</label>
+      </fieldset>
+      <input type="submit" name="submit" value="Submit">
+    </div>
+  </div>
+</section>
+    <footer>
+      <p>2865 Firefly ln. Greensburg, CA, 90210</p>
+      <p>(812)867-5309</p>
+    </footer>
+  </body>
+</html>
